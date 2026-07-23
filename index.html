@@ -3,51 +3,491 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApexBuild | Construction & Engineering</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="description" content="ApexBuild - Premium Construction & Architectural Excellence. Building luxury residential and commercial landmarks.">
+    <title>ApexBuild | Engineering Excellence & Luxury Construction</title>
+    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <nav class="container">
-        <h2>ApexBuild</h2>
-
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>
-            Building Strong Foundations for the Future.
-        </h1>
-
-        <p>
-            We deliver premium construction and engineering solutions for residential, commercial, and industrial projects.
-        </p>
-
-        <a href="#" class="btn">
-            Get Free Quote
-        </a>
-
+    <!-- Page Loader -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
     </div>
 
-</section>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
 
-<script src="script.js"></script>
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                APEX<span>BUILD</span>
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=2070" alt="Construction Hero">
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal">Building Tomorrow's <br><span class="accent">Landmarks</span> Today</h1>
+                    <p class="reveal delay-1">Premium architectural design and high-end construction services for visionaries. We turn complex blueprints into breathtaking realities.</p>
+                    <div class="hero-btns reveal delay-2">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Consultation</a>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="250">0</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="15">0</h3>
+                        <p>Awards Won</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="50">0</h3>
+                        <p>Active Sites</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-grid">
+                    <div class="about-img animate-left">
+                        <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=1000" alt="About ApexBuild">
+                        <div class="exp-badge">
+                            <span class="years">25+</span>
+                            <span class="text">Years Of Experience</span>
+                        </div>
+                    </div>
+                    <div class="about-text animate-right">
+                        <span class="subtitle">Our Legacy</span>
+                        <h2>Architecting the Future with Precision</h2>
+                        <p>ApexBuild is a premier global construction firm specializing in luxury residential, commercial skyscrapers, and sustainable infrastructure. Founded on the principles of integrity and craftsmanship, we deliver projects that stand the test of time.</p>
+                        <div class="mission-vision">
+                            <div class="mv-item">
+                                <i class="fas fa-eye"></i>
+                                <div>
+                                    <h4>Our Vision</h4>
+                                    <p>To redefine urban landscapes with innovative engineering.</p>
+                                </div>
+                            </div>
+                            <div class="mv-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <h4>Our Mission</h4>
+                                    <p>Exceeding client expectations through transparency and quality.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section-padding bg-darker">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Expertise</span>
+                    <h2>Comprehensive Solutions</h2>
+                </div>
+                <div class="card-grid">
+                    <div class="service-card animate-up">
+                        <i class="fas fa-home"></i>
+                        <h3>Residential Construction</h3>
+                        <p>Custom luxury homes designed to match your unique lifestyle and aesthetic preferences.</p>
+                    </div>
+                    <div class="service-card animate-up">
+                        <i class="fas fa-building"></i>
+                        <h3>Commercial Construction</h3>
+                        <p>State-of-the-art office buildings and retail spaces that drive business growth.</p>
+                    </div>
+                    <div class="service-card animate-up">
+                        <i class="fas fa-tools"></i>
+                        <h3>Renovation</h3>
+                        <p>Modernizing existing structures with cutting-edge technology and premium materials.</p>
+                    </div>
+                    <div class="service-card animate-up">
+                        <i class="fas fa-couch"></i>
+                        <h3>Interior Design</h3>
+                        <p>Exquisite interior spaces that blend functionality with high-end luxury aesthetics.</p>
+                    </div>
+                    <div class="service-card animate-up">
+                        <i class="fas fa-compass-drafting"></i>
+                        <h3>Architecture</h3>
+                        <p>Innovative architectural designs that push the boundaries of modern engineering.</p>
+                    </div>
+                    <div class="service-card animate-up">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Project Management</h3>
+                        <p>End-to-end management ensuring your project is on time, on budget, and on spec.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-us section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Why Choose Us</span>
+                    <h2>The ApexBuild Advantage</h2>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="icon-box">01</div>
+                        <h4>Experienced Engineers</h4>
+                        <p>Our team brings decades of collective expertise to every project site.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-box">02</div>
+                        <h4>Quality Materials</h4>
+                        <p>We source only the finest sustainable materials for long-lasting durability.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-box">03</div>
+                        <h4>On-Time Delivery</h4>
+                        <p>Rigorous scheduling ensures your project reaches completion exactly as planned.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-box">04</div>
+                        <h4>Modern Equipment</h4>
+                        <p>Utilizing the latest construction technology for precision and safety.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-box">05</div>
+                        <h4>Affordable Pricing</h4>
+                        <p>Competitive rates with full transparency—no hidden costs, ever.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-box">06</div>
+                        <h4>24/7 Support</h4>
+                        <p>Dedicated project managers available around the clock for your peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding bg-darker">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Portfolio</span>
+                    <h2>Featured Projects</h2>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card animate-up">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Project 1">
+                        <div class="project-overlay">
+                            <span class="cat">Commercial</span>
+                            <h3>Skyward Plaza</h3>
+                            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card animate-up">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" alt="Project 2">
+                        <div class="project-overlay">
+                            <span class="cat">Residential</span>
+                            <h3>The Golden Villa</h3>
+                            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card animate-up">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Project 3">
+                        <div class="project-overlay">
+                            <span class="cat">Interior</span>
+                            <h3>Luxe Office Hub</h3>
+                            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card animate-up">
+                        <img src="https://images.unsplash.com/photo-1449156001437-3a1621dfbe2b?auto=format&fit=crop&q=80&w=800" alt="Project 4">
+                        <div class="project-overlay">
+                            <span class="cat">Architecture</span>
+                            <h3>Urban Museum</h3>
+                            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card animate-up">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Project 5">
+                        <div class="project-overlay">
+                            <span class="cat">Residential</span>
+                            <h3>Eco-Modern Estates</h3>
+                            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card animate-up">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800" alt="Project 6">
+                        <div class="project-overlay">
+                            <span class="cat">Infrastructure</span>
+                            <h3>Apex Grand Bridge</h3>
+                            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Construction Process -->
+        <section class="process section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Our Workflow</span>
+                    <h2>How We Work</h2>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-num">01</div>
+                        <h4>Consultation</h4>
+                        <p>We discuss your vision, requirements, and budget constraints.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">02</div>
+                        <h4>Planning</h4>
+                        <p>Comprehensive blueprints and logistics planning for the build.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">03</div>
+                        <h4>Construction</h4>
+                        <p>Our expert crew begins the physical execution of the design.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">04</div>
+                        <h4>Inspection</h4>
+                        <p>Rigorous quality checks at every stage of the development.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">05</div>
+                        <h4>Delivery</h4>
+                        <p>Final walkthrough and official handover of your masterpiece.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials section-padding bg-darker">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Clients</span>
+                    <h2>What People Say</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"ApexBuild transformed our dream of a modern headquarters into a stunning reality. Their attention to detail is unmatched in the industry."</p>
+                        <div class="client-info">
+                            <img src="https://i.pravatar.cc/150?u=1" alt="Client">
+                            <div>
+                                <h5>James Sterling</h5>
+                                <span>CEO, Sterling Corp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Professional, efficient, and incredibly skilled. They completed our luxury villa 2 months ahead of schedule without compromising quality."</p>
+                        <div class="client-info">
+                            <img src="https://i.pravatar.cc/150?u=2" alt="Client">
+                            <div>
+                                <h5>Sarah Jenkins</h5>
+                                <span>Homeowner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The best project management experience I've had. Communication was transparent from the first meeting to the final delivery."</p>
+                        <div class="client-info">
+                            <img src="https://i.pravatar.cc/150?u=3" alt="Client">
+                            <div>
+                                <h5>Michael Rossi</h5>
+                                <span>Architect</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">FAQ</span>
+                    <h2>Common Inquiries</h2>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How long does a typical project take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Timelines vary based on scale. A custom residential home typically takes 10-14 months, while commercial projects are scheduled based on complexity.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Do you provide insurance and warranties?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, all our projects are fully insured and come with a comprehensive 10-year structural warranty for your peace of mind.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Can you work with my specific architect?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Absolutely. We frequently collaborate with external architectural firms to bring their specific visions to life through our engineering expertise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding bg-darker">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info animate-left">
+                        <h2>Let's Build Something Great</h2>
+                        <p>Ready to start your next landmark project? Contact our team for a professional consultation.</p>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-location-dot"></i>
+                                <div>
+                                    <h5>Office Address</h5>
+                                    <p>123 Luxury Row, Manhattan, NY 10001</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h5>Phone Number</h5>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h5>Email Address</h5>
+                                    <p>contact@apexbuild.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form animate-right">
+                        <form id="main-contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <select>
+                                    <option>Select Service</option>
+                                    <option>Residential</option>
+                                    <option>Commercial</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" placeholder="Project Details" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo">APEX<span>BUILD</span></a>
+                    <p>Setting the gold standard in modern construction and architectural innovation across the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Building Design</a></li>
+                        <li><a href="#">Site Management</a></li>
+                        <li><a href="#">Structural Eng.</a></li>
+                        <li><a href="#">Eco-Construction</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for project updates.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Email Address">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ApexBuild Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
 </body>
 </html>
