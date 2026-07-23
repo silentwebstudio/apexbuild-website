@@ -101,3 +101,43 @@ transition:.3s;
 .btn:hover{
 transform:translateY(-4px);
 }
+
+.about{
+padding:100px 0;
+background:#111827;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about h2{
+font-size:42px;
+margin-bottom:20px;
+color:#f59e0b;
+}
+
+.about p{
+line-height:1.8;
+margin-bottom:30px;
+color:#d1d5db;
+}
+
+.about-card{
+background:#1f2937;
+padding:40px;
+border-radius:15px;
+}
+
+.about-card h3{
+font-size:42px;
+color:#f59e0b;
+margin-top:20px;
+}
+
+.about-card p{
+margin-bottom:10px;
+}
