@@ -368,32 +368,50 @@ h2 {
 
 .project-card {
     position: relative;
-    border-radius: 10px;
     overflow: hidden;
-    height: 400px;
+    border-radius: 20px;
+    height: 420px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 15px 40px rgba(0,0,0,.35);
+    transition: all .45s ease;
 }
 
 .project-card img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.6s ease;
+    transition: transform .7s ease, filter .7s ease;
+    filter: brightness(.92);
 }
 
 .project-overlay {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    inset: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 30px;
+    background: linear-gradient(to top,
+        rgba(0,0,0,.95),
+        rgba(0,0,0,.35),
+        transparent);
     opacity: 0;
-    transition: var(--transition);
+    transition: all .45s ease;
 }
 
-.project-card:hover img { transform: scale(1.1); }
-.project-card:hover .project-overlay { opacity: 1; }
+.project-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(0,0,0,.45);
+}
 
+.project-card:hover img {
+    transform: scale(1.15);
+    filter: brightness(1.08);
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
 .project-overlay .cat {
     color: var(--primary-color);
     font-size: 0.8rem;
@@ -401,14 +419,24 @@ h2 {
 }
 
 .view-btn {
-    margin-top: 15px;
-    width: 40px; height: 40px;
+    margin-top: 18px;
+    width: 52px;
+    height: 52px;
     background: var(--primary-color);
     border-radius: 50%;
-    display: flex; justify-content: center; align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000;
+    font-size: 18px;
+    transition: all .35s ease;
+    box-shadow: 0 10px 25px rgba(212,175,55,.45);
 }
 
+.view-btn:hover {
+    transform: rotate(45deg) scale(1.1);
+    box-shadow: 0 18px 35px rgba(212,175,55,.6);
+}
 /* --- Process Timeline --- */
 .process-timeline {
     display: flex;
