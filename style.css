@@ -75,13 +75,20 @@ h2 {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #D4AF37, #F8E08E);
     color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 32px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.35);
 }
 
 .btn-primary:hover {
-    background-color: #fff;
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 18px 35px rgba(212, 175, 55, 0.5);
+    background: linear-gradient(135deg, #F8E08E, #D4AF37);
 }
 
 .btn-outline {
@@ -133,10 +140,12 @@ h2 {
 }
 
 .navbar.sticky {
-    background: rgba(10, 10, 10, 0.85);
-    backdrop-filter: blur(10px);
+    background: rgba(10, 10, 10, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 15px 0;
-    border-bottom: 1px solid var(--glass-border);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 .navbar .container {
@@ -144,13 +153,20 @@ h2 {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    transition: all .3s ease;
 }
 
-.logo span { color: var(--primary-color); }
+.logo span {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px rgba(212,175,55,.45);
+}
 
+.logo:hover {
+    transform: scale(1.05);
+}
 .nav-links {
     display: flex; gap: 30px;
 }
@@ -185,8 +201,10 @@ h2 {
 .hero-bg::after {
     content: '';
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.4));
+    inset: 0;
+    background:
+        linear-gradient(to right, rgba(0,0,0,.88), rgba(0,0,0,.45)),
+        linear-gradient(to top, rgba(0,0,0,.55), transparent);
 }
 
 .hero-bg img {
@@ -195,15 +213,19 @@ h2 {
 }
 
 .hero-content h1 {
-    font-size: 4.5rem;
-    line-height: 1.1;
+    font-size: clamp(3.2rem, 7vw, 5.8rem);
+    line-height: 1.05;
     margin-bottom: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-shadow: 0 8px 30px rgba(0,0,0,0.45);
 }
 
 .hero-content p {
-    max-width: 600px;
-    font-size: 1.1rem;
-    color: var(--text-muted);
+    max-width: 650px;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: rgba(255,255,255,0.82);
     margin-bottom: 2.5rem;
 }
 
@@ -290,16 +312,19 @@ h2 {
 }
 
 .service-card {
-    background: var(--glass);
+    background: rgba(255,255,255,0.05);
     padding: 40px;
-    border-radius: 15px;
-    border: 1px solid var(--glass-border);
-    transition: var(--transition);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    transition: all 0.45s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
 .service-card:hover {
-    background: var(--primary-color);
-    transform: translateY(-10px);
+    background: linear-gradient(135deg,#D4AF37,#F8E08E);
+    transform: translateY(-12px);
+    box-shadow: 0 20px 45px rgba(212,175,55,0.35);
 }
 
 .service-card i {
