@@ -140,21 +140,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Form Handling (Prevent Refresh) ---
-    const contactForm = document.getElementById('main-contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = "Message Sent!";
-            btn.style.backgroundColor = "#28a745";
-            contactForm.reset();
-            
-            setTimeout(() => {
-                btn.innerText = originalText;
-                btn.style.backgroundColor = "";
-            }, 3000);
-        });
-    }
 });
