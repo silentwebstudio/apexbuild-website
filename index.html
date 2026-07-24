@@ -437,26 +437,59 @@
                         </div>
                     </div>
                     <div class="contact-form animate-right">
-                        <form id="main-contact-form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <select>
-                                    <option>Select Service</option>
-                                    <option>Residential</option>
-                                    <option>Commercial</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <textarea rows="5" placeholder="Project Details" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
+                       <form id="main-contact-form"
+      action="https://formspree.io/f/mjgnaong"
+      method="POST">
+
+    <div class="form-group">
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
+    </div>
+
+    <div class="form-group">
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required>
+    </div>
+
+    <div class="form-group">
+        <input
+            type="tel"
+            name="phone"
+            placeholder="WhatsApp Number">
+    </div>
+
+    <div class="form-group">
+        <select name="service" required>
+            <option value="">Select Service</option>
+            <option>Business Website</option>
+            <option>E-Commerce Website</option>
+            <option>Portfolio Website</option>
+            <option>Restaurant Website</option>
+            <option>Gym Website</option>
+            <option>Website Redesign</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <textarea
+            name="message"
+            rows="5"
+            placeholder="Tell us about your project..."
+            required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Send Message
+    </button>
+
+</form>
                     </div>
                 </div>
             </div>
